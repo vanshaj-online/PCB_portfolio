@@ -16,6 +16,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 
 <body class="h-screen w-full relative">
@@ -30,7 +33,7 @@
 
                 <div class="w-[28%] h-full rounded-full flex justify-center items-center overflow-hidden">
 
-                    <a href="#home" class="nav-a bg-orange-400">home</a>
+                    <a href="#home" class="nav-first     bg-orange-400">home</a>
 
                 </div>
 
@@ -84,25 +87,57 @@
 
     <main class="w-full">
 
-        <div class="h-100 w-full flex items-center pl-5" id="home">
+        <div class="h-100 w-full flex flex-col justify-between items-center" id="home">
 
-            <div class="w-3/5 h-full flex flex-col pl-6 gap-6 pt-20 relative about">
+            <div class="h-4/5 w-full flex items-center pl-12">
 
-                <h3 class="text-2xl hello relative w-max border border-black p-2 text-white font-semibold">Hello!</h3>
+                <div class="w-3/5 h-full flex flex-col pl-6 gap-6 pt-12 ">
 
-                <h1 class="capitalize text-6xl">i'm <span class="text-[#efb45d] uppercase font-semibold name">udayveer</span>,</h1>
+                    <h3 class="text-2xl hello relative w-max border border-black p-2 text-white font-semibold">Hello!
+                    </h3>
 
-                <div class="changing-text w-full h-max relative py-2">
+                    <h1 class="capitalize text-6xl">i'm <span
+                            class="text-[#efb45d] uppercase font-semibold name">udayveer</span>,</h1>
 
-                    <h1 class="capitalize text-7xl">PCB Designer</h1>
+                    <div class="changing-text w-full h-max relative py-2">
+
+                        <h1 class="capitalize text-7xl">hardware engineer.</h1>
+
+                    </div>
+
+                    <div class="w-3/5  py-3 ">
+
+                        <img src="./images/qoute.svg" class="h-12 w-auto" alt="">
+
+                        <p class=" text-lg desc text-slate-600 font-semibold">Precision-driven hardware engineer with a
+                            knack for pushing boundaries in design and innovation. Combining expertise in circuitry with
+                            a passion for optimizing performance to deliver cutting-edge solutions.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="w-2/5 h-full image p-2">
+
+                    <img src="./images/image.svg" class="h-full object-cover object-center w-full" alt="">
 
                 </div>
 
             </div>
 
-            <div class="w-2/5 h-full image">
+            <div class="h-[15%] w-full flex items-center justify-center">
 
-                <img src="" alt="">
+                    <a href="#" class="capitalize font-light underline-offset-4 p-1  items-center justify-center gap-2 text-xl relative hire flex whitespace-nowrap">
+                        
+                        hire me 
+                        
+                        <div class="h-2 w-2 bg-orange-400 rounded-full flex justify-center items-center">
+
+                            <img src="./images/arrow.svg" class="opacity-0" alt="">
+
+                        </div> 
+                    
+                    </a>
 
             </div>
 

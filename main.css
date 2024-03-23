@@ -15,10 +15,22 @@
     font-weight: 300;
 }
 
+.nav-first{
+    background-color: rgb(251, 146, 60);
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-transform: capitalize;
+}
+
 .nav-a:hover{
     background-color: #222;
     color: #efb35b;
 }
+
 
 *{
     font-family: "Poppins", sans-serif;
@@ -70,12 +82,6 @@
     transition: transform .1s linear;
 }
 
-.image{
-    background-image: url(./images/img-bg.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 .hello::before{
     position: absolute;
@@ -89,4 +95,46 @@
     transition: .1s all linear;
 }
 
+.desc{
+    font-family: "Quicksand", sans-serif;
+}
 
+.hire{
+    transition: all linear .2s;
+    overflow: hidden;
+}
+
+.hire div img{
+    height: 70%;
+    width: auto;
+}
+
+.hire div{
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .2s;
+}
+
+.hire:hover > div{
+    height: 35px;
+    width: 35px;
+}
+
+.hire::before{
+    content: "";
+    position: absolute;
+    height: .1px;
+    width: 0%;
+    padding-bottom: 4px;
+    background-color: rgba(251, 146, 60, 0.79);
+    bottom: -2px;
+    border-radius: 0;
+    left: 0;
+    transition: .2s all linear;
+}
+
+.hire:hover::before{
+    width: 70%;
+}
+
+.hire:hover > div img{
+    opacity: 1;
+}
