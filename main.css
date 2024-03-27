@@ -7,28 +7,13 @@
     width: 100%;
     text-decoration: none;
     text-transform: capitalize;
-    color: white;
+    color: #555;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all .2s linear;
-    font-weight: 300;
-}
-
-.nav-first{
-    background-color: rgb(251, 146, 60);
-    color: white;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    text-transform: capitalize;
-}
-
-.nav-a:hover{
-    background-color: #222;
-    color: #efb35b;
+    font-weight: 500;
+    font-family: 'Quicksand',sans-serif;
 }
 
 
@@ -37,6 +22,7 @@
     font-weight: 400;
     font-style: normal;
     user-select: none;
+    scroll-behavior: smooth;
     -webkit-user-drag: none;
   }
 
@@ -54,10 +40,6 @@
     transform: translate(-50%,-50%);
 }
 
-.name{
-    font-family: "Hedvig Letters Sans", sans-serif;
-    font-style: normal;
-}
 
 .logo:hover > .logo-txt{
     opacity: 1;
@@ -74,12 +56,12 @@
 
 .logo:hover > img{
     opacity: 0;
-    /* display: none; */
     visibility: hidden;
 }
 
 .second-cursor{
     transition: transform .1s linear;
+    z-index: 9;
 }
 
 
@@ -95,7 +77,7 @@
     transition: .1s all linear;
 }
 
-.desc{
+.quicksand{
     font-family: "Quicksand", sans-serif;
 }
 
@@ -109,13 +91,20 @@
     width: auto;
 }
 
-.hire div{
+.hire div,
+.nav-a > div{
     transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .2s;
-}
-
-.hire:hover > div{
     height: 35px;
     width: 35px;
+    transform: scale(0.2);
+}
+
+
+
+
+.hire:hover > div,
+.nav-a:hover > div{
+    transform: scale(1);
 }
 
 .hire::before{
@@ -132,9 +121,109 @@
 }
 
 .hire:hover::before{
-    width: 70%;
+    width: 50%;
 }
 
-.hire:hover > div img{
+.hire:hover > div img,
+.nav-a:hover > div img{
     opacity: 1;
+}
+
+.content{
+    transition: .2s color linear;
+}
+
+.contact::before{
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: .3s transform cubic-bezier(0,1.15,0,-0.84)  ;
+    background-color: #EFB45D;
+    border-radius: 100%;
+    z-index: -1;
+}
+
+.contact:hover::before{
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.companies > div{
+    box-shadow:  9px 9px 27px #d9d9d9,
+             -9px -9px 27px #ffffff;
+             border-radius: 20px;
+    transition: transform .2s linear;
+}
+
+.companies > div h4{
+    font-family: "Hedvig Letters Sans", sans-serif;
+    font-weight: 500;
+    color: rgb(161, 159, 159);
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.companies > div:hover{
+    transform: scale(1.01);
+}
+
+#back-about > div,
+#back-about span{
+    transition: .2s linear all;
+}
+
+#back-about > span::before{
+    transition: .4s all cubic-bezier(1, 0, 0, 1);
+}
+
+#back-about > div{
+    height: 35px;
+    width: 35px;
+    transform: scale(0);
+}
+
+#back-about:hover > div{
+    transform: scale(1);
+}
+
+#back-about > span::before{
+    content: "";
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    z-index: -1;
+    border-radius: 0 100% 100% 100%;
+    left: 0%;
+    top: 0%;
+    background-color: #EFB45D;
+}
+
+#back-about > span:hover::before{
+    height: 200px;
+    width: 200px;
+}
+
+#back-about:hover > span{
+    color: white;
+}
+
+.good{
+    font-weight: 600;
+    transition: .2s text-shadow linear;
+}
+
+.good:hover{
+    text-shadow: 0 0 15px #e1b879;
+}
+
+.tools > div{
+    border-radius: 100%;
+    transition: .2s transform linear;
+}
+
+.tools > div:hover{
+    transform: scale(1.1);
 }

@@ -4,7 +4,17 @@ module.exports = {
   theme: {
     extend: {
       height: {
-        '100': "calc(100dvh - 112px)"
+        '112': 'calc(100dvh + 80px)',
+        '110': 'calc(100dvh - 80px)',
+        '150': 'calc(100vh - 200px)',
+        
+      },
+      minWidth:{
+        '100':'100vw'
+      },
+      fontFamily: {
+        display: ["Oooh Baby", "cursive"],
+        heading: ["Hedvig Letters Sans", 'sans-serif']
       }
     },
   },

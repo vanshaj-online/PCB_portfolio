@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>UV Hardware</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="website icon" type="svg" href="./images/uvlogo.svg">
     <script src="script.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,300;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,85 +21,103 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet">
 </head>
 
-<body class="h-screen w-full relative">
+<body class="w-full h-full bg-white relative">
 
-    <div class="second-cursor absolute h-5 w-5 bg-yellow-400 rounded-full "></div>
+    <div class="second-cursor absolute h-3 w-3 bg-orange-400 rounded-full "></div>
 
-    <header class=" h-28 w-full flex justify-center items-center">
+    <header class=" h-20 w-full flex justify-center items-center">
 
-        <nav class="h-3/5 w-[70%] bg-black rounded-full flex justify-between overflow-hidden p-2">
+        <nav class="h-full w-full flex justify-between overflow-hidden py-2 px-12">
 
-            <div class="left-sec w-[40%] flex justify-between">
+            <a href="" class="h-full w-max flex justify-center items-center logo relative">
 
-                <div class="w-[28%] h-full rounded-full flex justify-center items-center overflow-hidden">
-
-                    <a href="#home" class="nav-first     bg-orange-400">home</a>
-
-                </div>
-
-                <div class="w-[28%] h-full rounded-full flex justify-center items-center overflow-hidden">
-
-                    <a href="" class="nav-a">about</a>
-
-                </div>
-
-                <div class="w-[28%] h-full rounded-full flex justify-center items-center overflow-hidden">
-
-                    <a href="" class="nav-a">service</a>
-
-                </div>
-
-            </div>
-
-            <div class="h-full w-1/5 flex justify-center items-center logo relative">
-
-                <img src="./images/uvlogo.svg" class="object-contain object-center h-[150%] " alt="">
+                <img src="./images/uvlogo.svg" class="object-contain object-center h-[120%] " alt="">
 
                 <h1 class="logo-txt uppercase tracking-widest text-xl font-bold absolute">udayveer</h1>
 
+            </a>
+
+
+            <div class="w-[42%] h-full flex justify-around">
+
+                <div class=" h-full rounded-full flex justify-center items-center overflow-hidden">
+
+                    <a href="#service" class="nav-a hover:text-black flex justify-around items-center gap-2">
+
+                        <div class=" bg-orange-300 rounded-full flex justify-center items-center">
+
+                            <img src="./images/arrow.svg" class="opacity-0 h-3/5" alt="">
+
+                        </div>
+
+                        service
+                    </a>
+
+                </div>
+
+                <div class=" h-full rounded-full flex justify-center items-center overflow-hidden">
+
+                    <a href="" class="nav-a hover:text-black flex justify-around items-center gap-2">
+
+                        <div class=" bg-green-300 rounded-full flex justify-center items-center">
+
+                            <img src="./images/arrow.svg" class="opacity-0 h-3/5" alt="">
+
+                        </div>
+
+                        resume
+                    </a>
+
+                </div>
+
+                <div class=" h-full rounded-full  flex justify-center items-center overflow-hidden">
+
+                    <a href="" class="nav-a hover:text-black flex justify-around items-center gap-2">
+
+                        <div class=" bg-blue-300 rounded-full flex justify-center items-center">
+
+                            <img src="./images/arrow.svg" class="opacity-0 h-3/5" alt="">
+
+                        </div>
+
+                        project
+                    </a>
+
+                </div>
+
             </div>
 
-            <div class="right-sec w-[40%] flex justify-between">
+            <div class=" w-[10%] flex justify-center items-center logo relative py-3 px-5 ">
 
-                <div class="w-[28%] h-full rounded-full flex justify-center items-center overflow-hidden">
+                <a href="" class="nav-a flex w-min h-min rounded-full justify-center items-center contact relative hover:text-white text-black overflow-hidden">
 
-                    <a href="" class="nav-a">resume</a>
+                    contact
 
-                </div>
-
-                <div class="w-[28%] h-full rounded-full flex justify-center items-center overflow-hidden">
-
-                    <a href="" class="nav-a">project</a>
-
-                </div>
-
-                <div class="w-[28%] h-full rounded-full flex justify-center items-center overflow-hidden">
-
-                    <a href="" class="nav-a">contact</a>
-
-                </div>
+                </a>
 
             </div>
-
 
         </nav>
     </header>
 
-    <main class="w-full">
+    <main>
 
-        <div class="h-100 w-full flex flex-col justify-between items-center" id="home">
+        <div class="h-110 w-full flex flex-col justify-center pt-20 items-center relative bg-white" id="home">
 
             <div class="h-4/5 w-full flex items-center pl-12">
 
-                <div class="w-3/5 h-full flex flex-col pl-6 gap-6 pt-12 ">
+                <div class="w-3/5 h-full flex flex-col pl-6 gap-6">
 
                     <h3 class="text-2xl hello relative w-max border border-black p-2 text-white font-semibold">Hello!
                     </h3>
 
                     <h1 class="capitalize text-6xl">i'm <span
-                            class="text-[#efb45d] uppercase font-semibold name">udayveer</span>,</h1>
+                            class="text-[#efb45d] uppercase font-semibold font-heading">udayveer</span>,</h1>
 
                     <div class="changing-text w-full h-max relative py-2">
 
@@ -109,7 +129,8 @@
 
                         <img src="./images/qoute.svg" class="h-12 w-auto" alt="">
 
-                        <p class=" text-lg desc text-slate-600 font-semibold">Precision-driven hardware engineer with a
+                        <p class=" text-lg quicksand text-slate-600 font-semibold">Precision-driven hardware engineer
+                            with a
                             knack for pushing boundaries in design and innovation. Combining expertise in circuitry with
                             a passion for optimizing performance to deliver cutting-edge solutions.</p>
 
@@ -127,23 +148,251 @@
 
             <div class="h-[15%] w-full flex items-center justify-center">
 
-                    <a href="#" class="capitalize font-light underline-offset-4 p-1  items-center justify-center gap-2 text-xl relative hire flex whitespace-nowrap">
-                        
-                        hire me 
-                        
-                        <div class="h-2 w-2 bg-orange-400 rounded-full flex justify-center items-center">
+                <a href="#"
+                    class="capitalize text-zinc-700 underline-offset-4 p-1  items-center justify-center quicksand font-semibold gap-2 text-xl relative hire flex whitespace-nowrap">
 
-                            <img src="./images/arrow.svg" class="opacity-0" alt="">
+                    hire me
 
-                        </div> 
-                    
-                    </a>
+                    <div class="h-2 w-2 bg-orange-400 rounded-full flex justify-center items-center">
+
+                        <img src="./images/arrow.svg" class="opacity-0 h-3/5" alt="">
+
+                    </div>
+
+                </a>
 
             </div>
 
         </div>
 
+        <div id="section-2" class="max-h-screen h-screen flex relative bg-white">
+
+
+            <div class="h-screen flex min-w-100 flex-col justify-center items-center absolute top-0 left-0 rounded-[100px]"
+                id="about">
+
+                <div class="h-full w-full flex">
+
+                    <div class="h-full w-3/5 flex items-center justify-center">
+
+                        <div class="h-3/4 w-4/5 flex flex-col justify-evenly items-start">
+
+                            <h1 class="text-6xl capitalize quicksand font-semibold ">about
+
+                                <span class="text-[#efb45d] font-display text-7xl font-semibold"> me</span>
+
+                            </h1>
+
+                            <p class="text-2xl quicksand font-semibold  leading-loose ">
+                                Hello! I'm
+
+                                <a href="https://www.linkedin.com/in/udayveerSingh97" target="_blank"
+                                    class="linkedin text-2xl quicksand text-[#efb45d] font-semibold relative">
+
+                                    Udayveer Singh
+
+                                    <img src="./images/linkedin.svg"
+                                        class="absolute linkedinlogo hidden top-1/2 left-0 translate-y-[-50%] translate-x-[-50%]"
+                                        alt="">
+
+                                </a>
+
+                                , a
+                                passionate
+                                hardware engineer with a strong background in electronics and communication engineering.
+                                With a Bachelor's degree in hand and over 6 years of experience
+                                in the field, I've honed my skills in hardware design and PCB layout.
+                                <br>I'm passionate about pushing the boundaries of hardware design and innovation.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="h-full flex items-center justify-center w-2/5 ">
+
+                        <div class="h-3/5 w-3/5 flex items-center justify-center overflow-hidden rounded-xl ">
+
+                            <img src="./images/image.jpg" class="object-center object-cover h-full w-full" alt="">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="max-h-screen h-full min-w-100 flex flex-col justify-around absolute top-0 left-full bg-white rounded-[100px]"
+                id="experience">
+
+                <div class="w-full h-1/6 flex justify-between items-center px-[88px]">
+
+                    <h1 class="text-6xl  capitalize quicksand font-semibold">
+
+                        my work
+
+                        <span class="capitalize font-display text-7xl font-semibold text-[#efb45d]">
+
+                            experience
+
+                        </span>
+
+                    </h1>
+
+                </div>
+
+                <div class="h-3/4 w-full flex items-center justify-center py-10 px-20 relative">
+
+
+
+                    <div class="h-full w-full grid grid-cols-2 grid-rows-2 gap-6 companies">
+
+                        <div class="row-span-2 h-auto py-3 justify-center items-start px-7 gap-5 flex flex-col w-auto">
+
+                            <h4 class="">2023 - present</h4>
+
+                            <h2 class="quicksand text-2xl font-semibold capitalize">R&D Head, Hardware engineer</h2>
+
+                            <h3 class="text-xl text-slate-600">DEVAANG SOLAR</h3>
+
+                            <p class="text-xl quicksand text-slate-600 font-semibold">The manufacturing company produces
+                                electronic products such as solar street lights, MPPT controllers, charge controllers,
+                                and solar lighting. It aims to become the forerunner in solar and renewable energy
+                                products.</p>
+
+                        </div>
+
+                        <div class=" h-auto py-3 justify-center items-start px-10 gap-2 flex flex-col w-full">
+
+                            <h4 class="">2022 - 2023</h4>
+
+                            <h2 class="quicksand text-2xl font-semibold capitalize">R&D Manager</h2>
+
+                            <h3 class="text-xl text-slate-600 capitalize">Blue store pvt. ltd.</h3>
+
+                            <p class="text-lg quicksand text-slate-600 font-semibold">The manufacturing company produces
+                                electronic products such as chargers, speakers, etc. It aims to become the forerunner in
+                                mobile accessories and audio products.</p>
+
+                        </div>
+
+                        <div class=" h-auto py-3 justify-center items-start px-10 gap-2 flex flex-col w-full">
+
+                            <h4 class="">2018 - 2022</h4>
+
+                            <h2 class="quicksand text-2xl font-semibold capitalize">Hardware engineer</h2>
+
+                            <h3 class="text-xl text-slate-600 capitalize">Quantum Hi-tech merchandising pvt. ltd.</h3>
+
+                            <p class="text-lg quicksand text-slate-600 font-semibold">The fastest-emerging company in
+                                the field of electronics equipment, known for our ace quality PCB assemblies and mobile
+                                accessories.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="max-h-screen h-screen w-full pt-20 flex flex-col justify-around bg-white absolute top-0 left-[200%]"
+                id="skills">
+
+                <div class="w-full flex items-center justify-between px-[88px]">
+
+                    <h1 class="text-7xl text-black font-semibold quicksand">Techs I'm <span
+                            class="font-display capitalize good px-2 text-[#efb45d] ">skilled</span> at</h1>
+
+                </div>
+
+                <div class="w-full h-4/5 flex ">
+
+                    <div class="w-1/2 h-full flex items-center pl-24 justify-start">
+
+                        <p class=" flex flex-col gap-2 quicksand text-xl  text-slate-500">
+
+                            <b class="text-slate-800 text-2xl quicksand">Technical Documentation:</b> Facilitating
+                            efficient collaboration with clear and concise
+                            documentation.
+
+                            <b class="text-slate-800 text-2xl quicksand">PCB Design:</b> Optimizing layouts for peak
+                            performance.
+
+                            <b class="text-slate-800 text-2xl quicksand">Circuit Analysis:</b> Troubleshooting and
+                            optimizing circuits effectively.
+
+                            <b class="text-slate-800 text-2xl quicksand">Hardware Engineering:</b> Crafting efficient
+                            hardware systems.
+
+                            <b class="text-slate-800 text-2xl quicksand">Embedded Systems:</b> Seamlessly integrating
+                            hardware and firmware.
+
+                        </p>
+
+                    </div>
+
+                    <div class="w-1/2 h-full grid grid-cols-3 grid-rows-3 tools px-32 py-9">
+
+
+
+                        <div class="flex justify-center items-center p-3">
+
+                            <img class="object-contain object-center overflow-hidden" src="./images/altium.png" alt="">
+
+                        </div>
+
+                        <div></div>
+
+                        <div class="flex justify-center items-center p-3">
+
+                            <img class="object-contain object-center overflow-hidden" src="./images/mplab.svg" alt="">
+
+                        </div>
+
+                        <div></div>
+
+                        <div class="flex justify-center items-center p-3">
+
+                            <img class="object-contain object-center overflow-hidden" src="./images/protel.svg" alt="">
+
+                        </div>
+
+                        <div></div>
+
+                        <div class="flex justify-center items-center p-3">
+
+                            <img class="object-contain object-center overflow-hidden" src="./images/proteus.png" alt="">
+
+                        </div>
+
+                        <div></div>
+
+                        <div class="flex justify-center items-center p-3">
+
+                            <img class="object-contain object-center overflow-hidden" src="./images/easyEDA.svg" alt="">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
